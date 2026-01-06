@@ -5,3 +5,11 @@
     私は.see('Login');
     私は.seeInTitle('CodeceptJS Practice');
 });
+
+シナリオ('ログイン操作を行う',  ({ 私は }) => {
+    私は.ページを移動する('/index.html');
+    私は.フィールドに入力する('Email', 'test@example.com');
+    私は.フィールドに入力する('Password', 'password123');
+    私は.クリックする('Login');
+    私は.テキストがあることを確認する('Welcome!');
+});
