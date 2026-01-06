@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "codeceptjs run --verbose",
-    "test:form-input": "codeceptjs run --grep '@form'"
+    "test:form-input": "codeceptjs run --grep '@form'",
+    "test:example": "codeceptjs run ./tests/example_test.js"
   },
   "repository": {
     "type": "git",
