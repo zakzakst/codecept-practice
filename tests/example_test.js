@@ -15,11 +15,11 @@
     // 私は.要素を待つ('#message', 4);
     私は.待つ(5);
     私は.テキストがあることを確認する('Welcome!');
-});
+}).tag('@form').tag('important');
 
 Scenario('ログイン成功', ({ ログインページ }) => {
   ログインページ.open();
   ログインページ.login('test@example.com', 'password123');
   // pause();
   ログインページ.seeWelcomeMessage();
-});
+}).tag('@form').tag('important');
