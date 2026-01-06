@@ -1,0 +1,24 @@
+{
+  "name": "codecept-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zakzakst/codecept-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zakzakst/codecept-practice/issues"
+  },
+  "homepage": "https://github.com/zakzakst/codecept-practice#readme",
+  "devDependencies": {
+    "codeceptjs": "^3.7.5",
+    "playwright": "^1.57.0"
+  }
+}
