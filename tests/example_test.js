@@ -11,5 +11,8 @@
     私は.フィールドに入力する('Email', 'test@example.com');
     私は.フィールドに入力する('Password', 'password123');
     私は.クリックする('Login');
+    // TODO: waitForElement上手く動かない
+    // 私は.要素を待つ('#message', 4);
+    私は.待つ(5);
     私は.テキストがあることを確認する('Welcome!');
 });
