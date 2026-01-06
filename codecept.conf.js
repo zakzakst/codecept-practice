@@ -8,12 +8,14 @@ setCommonPlugins();
 
 /** @type {CodeceptJS.MainConfig} */
 exports.config = {
-  tests: './tests',
+  tests: './tests/*_test.js',
   output: './output',
   helpers: {
     Playwright: {
       browser: 'chromium',
-      url: 'http://localhost',
+      // url: 'http://localhost',
+      // url: 'http://127.0.0.1:5500',
+      url: 'file://' + process.cwd(),
       show: true
     }
   },
