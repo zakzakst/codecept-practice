@@ -16,16 +16,18 @@ exports.config = {
       // url: 'http://localhost',
       // url: 'http://127.0.0.1:5500',
       url: 'file://' + process.cwd(),
-      show: true
+      show: true,
+      // trace: true,
     }
   },
   include: {
-    '私は': './steps_file.js'
+    '私は': './steps_file.js',
+    'ログインページ': './tests/pages/LoginPage.js',
   },
   plugins: {
     htmlReporter: {
       enabled: true
-    }
+    },
   },
   name: 'codecept-practice',
   translation: 'ja-JP'

@@ -16,3 +16,10 @@
     私は.待つ(5);
     私は.テキストがあることを確認する('Welcome!');
 });
+
+Scenario('ログイン成功', ({ ログインページ }) => {
+  ログインページ.open();
+  ログインページ.login('test@example.com', 'password123');
+  // pause();
+  ログインページ.seeWelcomeMessage();
+});
